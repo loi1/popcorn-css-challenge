@@ -1,5 +1,82 @@
-/*COLORS:
-Header background - #FFDBAA
-button - #805215
-Header Text - #553100
-Main background - #D4A76A*/
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 4fr 4fr;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 20px 40px;
+  background: #FFDBAA;
+  color: #553100;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Tahoma, Arial, “Trebuchet MS”, Helvetica, sans-serif;
+  border: 1px solid #666;
+}
+
+.item1-a {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.headerbutton{
+  background: #805215;
+  color: #FFFFFF;
+  font-size: large;
+  font-family: Tahoma, Arial, “Trebuchet MS”, Helvetica, sans-serif;
+  padding: 10px 20px;
+  border: 1px none #666;
+  margin: 5px;
+}
+
+.container2 {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #D4A76A;
+}
+
+.middlebox {
+  font-family: Tahoma, Arial, “Trebuchet MS”, Helvetica, sans-serif;
+  background: white;
+  text-align: center;
+  box-shadow: 0px 0px 1px 1px black, 0px 0px 2px 2px black;
+  margin: 10%;
+}
+
+.middlebox p {
+  text-align: left;
+  margin-left: 5%;
+  height: 50px;
+}
+
+.middlebox button {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.footerbox {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  font-family: Tahoma, Arial, “Trebuchet MS”, Helvetica, sans-serif;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 0px 1px 1px black, 0px 0px 2px 2px black;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.footerbox p {
+  text-align: left;
+  margin-left: 2.5%;
+  height: 50px;
+}
+
+.footerbox button {
+  width: 95%;
+}
